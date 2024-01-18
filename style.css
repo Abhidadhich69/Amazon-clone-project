@@ -1,0 +1,549 @@
+*{
+    margin:  0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: border-box;
+}
+.navbar{
+    height: 10vh;
+    width: 98vw;
+    background-color: #0f1111;
+    color: white;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 0 1vw;
+    gap: 3.5vw;
+    position: fixed;
+    z-index: 200;
+}
+.navlogo{
+    height: 7vh;
+    width: 7vw;
+}
+.logo{
+    background-image: url(/images/amazon_logo.png);
+    height: 100%;
+    width:100%;
+    background-size: cover;
+}
+.border-class{
+    border: 1px solid transparent;
+}
+.border-class:hover
+{
+    border: 1px solid white;
+}
+#deli{
+    color: #cccc;
+    font-size: 0.80rem;
+}
+.navaddress{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.india
+{
+    font-size: 1rem;
+}
+.icon{
+    display: flex;
+    align-items: center;
+}
+/** box3 **/
+.nav-search{
+    display: flex;
+    justify-content: space-evenly; 
+    background-color: #FEBD69;
+    min-width: 40vw;
+    /* width:50vw; */
+    height:6vh;
+    border-radius: 4px;
+}
+.nav-search .sicon:hover{
+    background-color: #F3A847;
+    border-radius: inherit;
+}
+.nav-search select{
+    color: rgba(102, 102, 102, 0.911);
+}
+#navin{
+    padding-left: 1vw;
+}
+/* .nav-search:hover{
+    border: 1px solid orange;
+} */
+.languages{
+    height: 90%;
+    width: 5vw;
+    position: relative;
+    padding: 1px;
+    border: 1px solid transparent;
+}
+.languages:hover{
+    border: 1px solid white;
+}
+.languages-items{
+    display: flex;
+    position: absolute;
+    bottom: 25%;
+    gap: 0.5vw;
+}
+.languages img{
+    height: 30%;
+    width: 38%;
+}
+.languages p{
+    font-weight: bold;
+    font-size: 2vh;
+}
+#navsel{
+    border-top-left-radius: 4px;
+    text-align: center;
+    border-bottom-left-radius:4px ;
+    background-color: #D4D4D4;
+    width:4vw;
+    border: none;
+}
+.nav-search input{
+    width: 100%;
+    font-size: 1rem;
+    border: none;
+}
+.sicon{
+    width:3.50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    color: #0f1111;
+}
+/* box4 */
+span{
+    font-size: 0.7rem;
+}
+#acc{
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+/* box5 *
+.navcart {
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+/* nav2
+ */
+.nav-2{
+    height:7vh;
+    width: 99vw;
+    background-color: #222f3d;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+    position: absolute;
+    top: 10%;
+    z-index: 100;
+    left: 0;
+}
+.navops a{
+    display: inline;
+}
+.navops{
+    /* background-color: pink; */
+    width:60%;
+    height: 90%;
+    font-size: 0.85rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.navops a{
+    /* background-color: #F3A847; */
+    text-decoration: none;
+    color: white;
+    font-weight: lighter;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 4px;
+    border: 1px solid transparent;
+}
+.navops a:hover{
+    border: 1px solid white;
+}
+.navdeals{
+    font-size: 0.9rem;
+    font-weight: 700;
+    border: 1px solid transparent;
+}
+.navdeals:hover{
+    cursor: pointer;
+    border: 1px solid white;
+}
+.sign-in-pop-up{
+    /* height: 60vh; */
+    width: 35vw;
+    background-color: white;
+    border: 1px solid rgb(99, 99, 99);
+    position: absolute;
+    z-index: 250;
+    right: 8%;
+    top: 9%;
+    border-radius: 3px;
+    padding: 1vh;
+    padding-bottom: 2.5vw;
+    display: none;
+}
+.nav-signin-popup-head{
+    height: 12vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgba(209, 209, 209, 0.829);
+    gap: 1vh;
+    margin-bottom: 3px;
+}
+.nav-signin-popup-head button{
+    width: 45%;
+    height: 38%;
+    border-radius: 5px;
+    border: none;
+    background-color: #FFD814;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+}
+.nav-signin-popup-head button:hover{
+    text-decoration: underline;
+    text-decoration-color: red;
+}
+.nav-signin-popup-head p{
+    font-size: 1.8vh;
+    cursor: pointer;
+    color: rgb(46, 46, 46);
+}
+.nav-signin-popup-head span{
+    font-size: 1.8vh;
+    color: rgb(0, 140, 255);
+    cursor: pointer;
+}
+.nav-signin-popup-head span:hover{
+    color:#ff9e1f;
+    text-decoration: underline;
+}
+.nav-signin-popup-bottom{
+    height: 80%;
+    width: 100%;
+    display: flex;
+}
+.signup-bottom-left{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 1.3vw;
+    border-right: 1px solid rgba(202, 202, 202, 0.829);
+}
+.signup-bottom-right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 1.3vw;
+}
+.nav-signin-popup-bottom p{
+    font-size: 0.9vw;
+    font-weight: lighter;
+    cursor: pointer;
+    color: rgb(83, 83, 83);
+}
+.nav-signin-popup-bottom p:hover{
+    color:#ff9e1f;
+    text-decoration: underline;
+}
+/* shop section  */
+.content{
+    min-height: 400vh;
+    width:100%;
+    position: absolute;
+    background-color: #E3E6E6;
+    top: 17.2%;
+}
+.content img{
+    width: 100%;
+}
+.content-items{
+    height: 80vh;
+    width: 82%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5vw;
+    position: absolute;
+    z-index: 10;
+    top: 11%;
+    left: 1%;
+}
+.content-card{
+    height: 64vh;
+    width: 23vw;
+    background-color: white;
+}
+.content-item-head{
+    width: 100%;
+    height: 18%;
+    display: flex;
+    align-items: center;
+}
+.content-item-head h2{
+    padding: 1px 1.2vw;
+    font-size: 1.5vw;
+}
+.content-card-item{
+    height: 75%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 0 1vw;
+    align-items: center;
+    cursor: pointer;
+}
+.content-card-item img{
+    height: 15vh;
+}
+.content-card-item p{
+    font-size: 1.8vh;
+    color: rgb(51, 51, 51);
+    letter-spacing: 0.8px;
+}
+.content-card > p{
+    font-size: small;
+    color: rgb(84, 182, 221);
+    padding-top: 1vh;
+    padding-left: 1vw;
+    cursor: pointer;
+}
+.content-card > p:hover{
+    text-decoration: underline;
+}
+.content-cover-bg{
+    height: 0;
+    width: 100vw;
+    background-color: rgba(39, 39, 39, 0.5);
+    position: absolute;
+    z-index: 15;
+}
+.swiper-btn{
+    position: relative;
+    top: -20%;
+}
+.content-items-card-swiper{
+    height: 50vh;
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    top: 48.5%;
+    display: flex;
+    align-items: center;
+}
+.content-swiper-card-item{
+    height: 45vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+.content-swiper-sub-item-card{
+    height: 100%;
+    width: 20%;
+    background-color: #F7F8F8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.content-swiper-sub-item-card img{
+    height: 80%;
+    width: 70%;
+}
+.content-swiper-sub-item-card p{
+    font-size: small;
+    margin-top: 1vh
+}
+
+/* footer
+ */
+footer{
+    position: absolute;
+    color: white;
+    bottom: 0;
+}
+
+.foot1{
+    background-color: #485769;
+    height:8vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.foot1:hover{
+    background-color: #526275;
+}
+.foot2{
+    background-color: #232F3E;
+    display: flex;
+    color: white;
+    height:38vh;
+    width: 92vw;
+    justify-content: space-around;
+    padding: 4vw;
+    border-bottom: 0.3px solid rgba(184, 184, 184, 0.637);
+}
+.foot2 a{
+    color: white;
+    text-decoration: none;
+}
+.foot2-1{
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+.foot2-1 p{
+    font-weight: bold;
+}
+.foot2-1 div{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vw;
+}
+.foot2-1 div a{
+    color: rgb(230, 230, 230);
+    font-size: 1vw;
+}
+.foot2-1 div a:hover{
+    text-decoration: underline;
+}
+.footer-bottom-1{
+    height: 25vh;
+    width: 100vw;
+    background-color: #232F3E;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1vh;
+}
+.footer-bottom-2{
+    height: 42vh;
+    width: 92vw;
+    background-color: #131A22;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 4vw;
+}
+
+.footlogo{
+    height:7vh ;
+    width:7vw;
+}
+.countries a{
+    color:white;
+}
+
+.footbot2{
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+
+.footbot2 p{
+    font-size: 0.80rem;
+}
+
+.footbot2{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vw;
+}
+
+.footbot2 div a{
+    color:#999999;
+    font-size: 0.80rem;
+}
+
+.footbot2 div a:hover{
+    text-decoration: underline;
+}
+
+
+
+.foot-bottom-1-head{
+    /* height: 100%; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6vw;
+}
+.footer-amazon-logo img{
+    width: 7.2vw;
+}
+.footer-languages-dialog-box button{
+    padding:  1vh 1vw;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: rgb(211, 211, 211);
+    border: 1px solid rgb(187, 187, 187);
+    background-color: transparent;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+.foot-bottom-1-bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.foot-bottom-1-bottom a{
+    color: rgb(235, 235, 235);
+    text-decoration: none;
+    font-size: 0.8vw;
+    padding-right: 1.2vh;
+}
+.footer-bottom-2-upper{
+    display: flex;
+    gap: 5vw;
+    font-size: small
+}
+.footer-bottom-2-upper p{
+    color: #999999;
+}
+.footer-bottom-2-upper span{
+    font-size: small;
+}
+.footer-bottom-2-lower div{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 0.80rem;
+   
+
+}
+.footer-bottom-2-UpperItem p{
+    font-size: 0.8vw;
+}
+
+.lastinfo {
+    gap: 1vw;
+}
